@@ -1,0 +1,4 @@
+<changelog>
+    <changeSet id="1" file="19.11.24-16.15-create-table-users.sql"/>
+    <changeSet id="2" file="19.11.24-17.26-create-table-products.sql"/>
+</changelog>
