@@ -1,4 +1,4 @@
 <changelog>
-    <changeSet id="1" file="19.11.24-16.15-create-table-users.sql"/>
-    <changeSet id="2" file="19.11.24-17.26-create-table-products.sql"/>
+    <changeSet id="1" version="1.0.0" file="19.11.24-16.15-create-table-users.sql" rollback="20.11.24-14.48-rollback-create-table-users.sql"/>
+    <changeSet id="2" version="1.1.0" file="19.11.24-17.26-create-table-products.sql" rollback="20.11.24-14.52-rollback-create-table-products.sql"/>
 </changelog>
