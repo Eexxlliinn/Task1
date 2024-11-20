@@ -10,6 +10,7 @@ public class MigrationTool {
         FileReaderImpl fileReader = new FileReaderImpl();
         SqlExecutorImpl sqlExecutor = new SqlExecutorImpl();
         MigrationManagerImpl migrationManager = new MigrationManagerImpl(fileReader, sqlExecutor);
-        migrationManager.runMigrations(changelogPath);
+        migrationManager.runMigrationsToVersion(changelogPath, "2.0.0");
+        migrationManager.rollbackMigration(changelogPath, "1.0.0");
     }
 }

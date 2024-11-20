@@ -15,7 +15,6 @@ public class FileReaderImpl implements FileReader {
 
     @Override
     public Set<String> findAllFiles(final String path) throws IOException {
-        Set<String> files = new HashSet<String>();
         try (Stream<Path> stream = Files.walk(Paths.get(path), 3)) {
             return stream
                     .filter(file -> !Files.isDirectory(file))
